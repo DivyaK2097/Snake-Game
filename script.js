@@ -65,12 +65,12 @@ function drawGame() {
 
   // Draw snake
   snake.forEach((segment, index) => {
-    ctx.fillStyle = index === 0 ? 'green' : 'lightgreen'; // Head is green, body is light green
+    ctx.fillStyle = index === 0 ? 'cyan' : 'lightgreen'; // Head is cyan, body is lightgreen
     ctx.fillRect(segment.x, segment.y, snakeSize, snakeSize);
   });
 
   // Draw food
-  ctx.fillStyle = 'red';
+  ctx.fillStyle = 'yellow';
   ctx.fillRect(food.x, food.y, snakeSize, snakeSize);
 }
 
@@ -89,11 +89,11 @@ function checkCollision(head) {
   return false;
 }
 
-function resetGame() {
-  snake = [{x: 100, y: 100}, {x: 80, y: 100}, {x: 60, y: 100}];
-  direction = 'RIGHT';
-  food = generateFood();
-  score = 0;
-  scoreDisplay.textContent = score;  // Reset the score display
-  gameStarted = false;
-}
+// function resetGame() {
+//   snake = [{x: 100, y: 100}, {x: 80, y: 100}, {x: 60, y: 100}];
+//   direction = 'RIGHT';
+//   food = generateFood();
+//   score = 0;
+//   scoreDisplay.textContent = score;  // Reset the score display
+//   gameStarted = false;
+// }

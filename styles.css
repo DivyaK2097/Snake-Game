@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #c1fbff;
   }
   
   #gameArea {
@@ -22,9 +22,12 @@
   }
   
   canvas {
-    border: 2px solid black;
-    background-color: #000;
+    border: 2px solid #007724; /* Darker border for contrast */
+    background-color: #05743c; /* Light pastel background color */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 4px 4px 10px rgba(100, 185, 3, 0.589), -4px -4px 10px rgb(232, 255, 231); /* 3D shadow effect */
   }
+  
   
   #scoreBoard {
     display: flex;
