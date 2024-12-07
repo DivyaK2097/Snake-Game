@@ -42,7 +42,7 @@ function gameLoop() {
 
   // Check if snake eats food
   if (head.x === food.x && head.y === food.y) {
-    score++;
+    score=score+10;
     scoreDisplay.textContent = score;  // Update the score display
     food = generateFood();
   } else {
@@ -89,11 +89,11 @@ function checkCollision(head) {
   return false;
 }
 
-// function resetGame() {
-//   snake = [{x: 100, y: 100}, {x: 80, y: 100}, {x: 60, y: 100}];
-//   direction = 'RIGHT';
-//   food = generateFood();
-//   score = 0;
-//   scoreDisplay.textContent = score;  // Reset the score display
-//   gameStarted = false;
-// }
+function resetGame() {
+  snake = [{x: 100, y: 100}, {x: 80, y: 100}, {x: 60, y: 100}];
+  direction = 'RIGHT';
+  food = generateFood();
+  score = 0;
+  scoreDisplay.textContent = score;  // Reset the score display
+  gameStarted = false;
+}
